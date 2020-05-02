@@ -34,7 +34,6 @@ io.on('connection', (socket) => {
         callback();
     });
 
-
     socket.on('disconnect', () => {
         console.log('User has left.');
     })
