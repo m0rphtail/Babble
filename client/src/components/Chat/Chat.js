@@ -56,7 +56,7 @@ const Chat = ({ location }) => {
             <div className="container">
                 <InfoBar room={room} />
                 
-               
+            </div>
         </div>
     )
 }
