@@ -17,7 +17,7 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState('');
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = 'https://m0rphtail.github.io/Babble/';
+  const ENDPOINT = 'https://project-chat-application.herokuapp.com/';
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -54,7 +54,7 @@ const Chat = ({ location }) => {
 
   return (
     <div className="outerContainer">
-      <TextContainer users={users}/>
+            <TextContainer users={users}/>
       <div className="container">
           <InfoBar room={room} />
           <Messages messages={messages} name={name} />

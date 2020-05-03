@@ -7,22 +7,23 @@ import './TextContainer.css';
 const TextContainer = ({ users }) => (
   <div className="textContainer">
     <div>
-      <h1>Babble Chat</h1>
+      <h1>Babble Chat  <span role="img" aria-label="emoji">💬</span></h1>
+      <h1>_______________</h1>
     </div>
     {
       users
         ? (
           <div>
-            <h1>People currently chatting:</h1>
+            <h2>People online:</h2>
             <div className="activeContainer">
-              <h2>
+              <h3>
                 {users.map(({name}) => (
                   <div key={name} className="activeItem">
                     {name}
                     <img alt="Online Icon" src={onlineIcon}/>
                   </div>
                 ))}
-              </h2>
+              </h3>
             </div>
           </div>
         )
