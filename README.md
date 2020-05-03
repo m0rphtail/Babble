@@ -1,3 +1,3 @@
 # Babble
 
-### Infinite chat rooms with infinite poeple.
+### Infinite chat rooms with infinite people.
